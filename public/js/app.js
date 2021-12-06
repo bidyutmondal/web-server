@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error;
             } else{
                 messageOne.textContent = data.placeName;
-                messageTwo.textContent = data.weather_desc;
+                messageTwo.textContent = 'The weather description of ' + data.placeName + ' is ' + data.weather_desc + '.\nI can add more garbage data but at this point of time I am not interested in doing so.';
             }
         })
     })
