@@ -15,15 +15,15 @@ weatherForm.addEventListener('submit', (e) => {
 
     const url = '/weather?address=' + encodeURI(location)
 
-    // fetch(url).then((response) => {
-    //     response.json().then((data) => {
-    //         if(data.error){
-    //             messageOne.textContent = data.error;
-    //         } else{
-    //             messageOne.textContent = data.placeName;
-    //             messageTwo.textContent = data.weather_desc;
-    //         }
-    //     })
-    // })
+    fetch(url).then((response) => {
+        response.json().then((data) => {
+            if(data.error){
+                messageOne.textContent = data.error;
+            } else{
+                messageOne.textContent = data.placeName;
+                messageTwo.textContent = data.weather_desc;
+            }
+        })
+    })
 
 })
