@@ -1,0 +1,36 @@
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    margin-bottom: 16px;
+}
+
+header a{
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+img{
+    width: 720px;
+}
+
+footer{
+    color: #888;
+    position: absolute;
+    bottom: 0;
+}
+
+input{
+    border: 1px solid #cccccccc;
+    padding: 8px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #8888;
+    background: #8888;
+    color: white;
+    padding: 8px;
+}
