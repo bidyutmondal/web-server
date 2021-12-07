@@ -1,11 +1,14 @@
 {
+  "homepage": "https://bidyutmondal.github.io/web-server",
   "name": "web-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js -e js,hbs,html,css"
+    "dev": "nodemon src/app.js -e js,hbs,html,css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
